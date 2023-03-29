@@ -3,32 +3,72 @@
   <head>
     <style>
 
+    .banner {
+      display: flex;
+      justify-content: center;
+    }
     .banner-image {
     width: 128px;
     height: 128px;
     object-fit: cover;
     border-radius: 128px;}
 
-    .link {
+    .thumbnail {
     width: 88px;
     height: 88px;
     object-fit: cover;
     border-radius: 88px;
-    text-decoration: none;}
+    text-decoration: none;
+    }
+    
+    .link {
+      background-color: #f9f8fc;
+      display: flex;
+      align-items: center;
+      padding: 5px;
+    }
 
     body {
     background-color: #fec7d7;
+    display: flex;
+    justify-content: center;
     }
 
     .name {
     color: #0e172c;
+    font-family: Sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
     }
 
+    .social-icons {
+    display: flex;
+    justify-content: space-around;
+    }
+    
     .social-icons a {
     color: #0e172c;
-    
+    font-family: Sans-serif;
+    font-size: 20px;
     }
- 
+    
+    .items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 640px;
+    flex-grow: 1;
+    }
+
+    .link a {
+    color: #001e1d;
+    font-family: Sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    flex-grow: 1;
+    } 
 
     </style>
 
@@ -40,48 +80,50 @@
 
   <body>
 
-  <div>
-    <img src="/profile-pic.jpg" alt="Dog" class="banner-image">
-  </div>
+    <div class="items">
+      <div class="banner">
+        <img src="/profile-pic.jpg" alt="Dog" class="banner-image">
+      </div>
 
-  <div class="name">
-    Hazel Chui
-  </div>
+      <div class="name">
+        Hazel Chui
+      </div>
 
-  <div class="social-icons">
-    <a href="https://github.com/hazelchc" target="_blank">
-      GitHub
-    </a>
+      <div class="social-icons">
+        <a href="https://github.com/hazelchc" target="_blank">
+          GitHub
+        </a>
 
-    <a href="https://www.linkedin.com/in/hazel-chui-13758720b" target="_blank">
-      LinkedIn
-    </a>
+        <a href="https://www.linkedin.com/in/hazel-chui-13758720b" target="_blank">
+          LinkedIn
+        </a>
 
-    <a href="https://www.instagram.com/hazel.hchc/" target="_blank">
-      Instagram
-    </a>
-  </div>
+        <a href="https://www.instagram.com/hazel.hchc/" target="_blank">
+          Instagram
+        </a>
+      </div>
 
-  <div>
-    <img src="/sebastien-goldberg-YmvYdFU4LvE-unsplash.jpg" class="link">
+      <div class="link">
+        <img src="/sebastien-goldberg-YmvYdFU4LvE-unsplash.jpg" class="thumbnail">
 
-    <a target="_blank" href="https://www.hongkongfoodietours.com/19-must-eat-foods-in-hong-kong/">19 Must-eat Foods in Hong Kong
-    </a>
-  </div>
+        <a target="_blank" href="https://www.hongkongfoodietours.com/19-must-eat-foods-in-hong-kong/">19 Must-eat Foods in Hong Kong
+        </a>
+      </div>
 
-  <div>
-    <img src="/sawyer-bengtson-tnv84LOjes4-unsplash.jpg" class="link">
+      <div class="link">
+        <img src="/sawyer-bengtson-tnv84LOjes4-unsplash.jpg" class="thumbnail">
 
-    <a target="_blank"
-      href="https://www.theinfatuation.com/chicago/guides/first-timers-chicago-restaurant-guide">The First Timer’s Guide To Eating In Chicago</a>
-  </div>
+        <a target="_blank"
+          href="https://www.theinfatuation.com/chicago/guides/first-timers-chicago-restaurant-guide">The First Timer’s Guide To Eating In Chicago</a>
+      </div>
 
-  <div>
-    <img
-      src="/recha-oktaviani-t__61ap00Mc-unsplash.jpg" class="link">
+      <div class="link">
+        <img
+          src="/recha-oktaviani-t__61ap00Mc-unsplash.jpg" class="thumbnail">
 
-    <a target="_blank" href="https://www.w3schools.com/sql/">SQL Tutorial</a>
-  </div>
+        <a target="_blank" href="https://www.w3schools.com/sql/">SQL Tutorial</a>
+      </div>
+    </div>
   </body>
-
+  
 </html>
