@@ -14,11 +14,10 @@
 
 
       .portrait {
-      width: 280px;
-      height: 320px;
+      width: 256px;
+      height: 256px;
       object-fit: cover;
       display: block
-
     }
 
       .thumbnail {
@@ -54,7 +53,7 @@
       margin-top: 80px;
       font-family: Sans-serif;
       font-size: 20px;
-      justify-content: center
+      justify-content: flex-end
       }
 
       /* .social-icons {
@@ -135,36 +134,43 @@
         color: #001e1d"
         > -->
 
-
-    <div class="name">   
-      <h1>Hazel Chui</h1>
-    </div>
-
-    <div class="items">
-      <div class="banner">
-        <img src="/profile-pic.png" alt="Dog" class="portrait">
-    </div>
-
-      <div class="link">
-        <img src="/sebastien-goldberg-YmvYdFU4LvE-unsplash.jpg" class="thumbnail">
-
-        <a target="_blank" href="https://www.hongkongfoodietours.com/19-must-eat-foods-in-hong-kong/">19 Must-eat Foods in Hong Kong
-        </a>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="name">   
+            <h1>Hazel Chui</h1>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="banner">
+            <img src="/profile-pic.png" alt="Dog" class="portrait">
+          </div>
+        </div>
       </div>
 
-      <div class="link">
-        <img src="/sawyer-bengtson-tnv84LOjes4-unsplash.jpg" class="thumbnail">
+      <div class="row">
 
-        <a target="_blank"
-          href="https://www.theinfatuation.com/chicago/guides/first-timers-chicago-restaurant-guide">The First Timer’s Guide To Eating In Chicago</a>
-      </div>
+        <div class="items">
+          <div class="link">
+            <img src="/sebastien-goldberg-YmvYdFU4LvE-unsplash.jpg" class="thumbnail">
 
-      <div class="link">
-        <img
-          src="/recha-oktaviani-t__61ap00Mc-unsplash.jpg" class="thumbnail">
+            <a target="_blank" href="https://www.hongkongfoodietours.com/19-must-eat-foods-in-hong-kong/">19 Must-eat Foods in Hong Kong
+            </a>
+          </div>
 
-        <a target="_blank" href="https://www.w3schools.com/sql/">SQL Tutorial</a>
-      </div>
+          <div class="link">
+            <img src="/sawyer-bengtson-tnv84LOjes4-unsplash.jpg" class="thumbnail">
+
+            <a target="_blank"
+              href="https://www.theinfatuation.com/chicago/guides/first-timers-chicago-restaurant-guide">The First Timer’s Guide To Eating In Chicago</a>
+          </div>
+
+          <div class="link">
+            <img
+              src="/recha-oktaviani-t__61ap00Mc-unsplash.jpg" class="thumbnail">
+
+            <a target="_blank" href="https://www.w3schools.com/sql/">SQL Tutorial</a>
+          </div>
     </div>
     <ul class="social-icons">
       <li><a href="" target="_blank"><img src='img/gscholar.svg' /></a></li>
