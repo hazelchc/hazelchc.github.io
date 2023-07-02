@@ -10,62 +10,80 @@
     <meta name="author" content="Hazel Chui">
     <meta name="viewport" content="width=device-width">
 
+    <!-- Style -->
     <style>
+      .container {
+      display: flex;
+      justify-content: center
+      }
 
+      .name {
+      color: #0e172c;
+      margin-top: 135px;
+      font-family: Sans-serif;
+      font-size: 20px;
+      }
 
       .portrait {
-      width: 256px;
-      height: 256px;
+      margin-top: 80px;
+      width: 220px;
+      height: 220px;
       object-fit: cover;
-      display: block
-    }
+      display: flex;
+      }
 
-      .thumbnail {
+      .row.header {
+      justify-content: space-around
+      }
+
+      /* .thumbnail {
       width: 88px;
       height: 88px;
       object-fit: cover;
       border-radius: 88px;
       text-decoration: none;
       }
+      */
       
-      .link {
-        background-color: #fffffe;
+      .intro {
+        /* background-color: #fffffe; */
         display: flex;
+        margin-top: 35px;
+        font-size: 18px;
         align-items: center;
-        padding: 5px;
-      }
+        padding: 10px;
+      } 
+
       .navbar {
         background-color: #fffffe
       }
+
       .navbar-nav.ml-auto li a{
         color: #0e172c
       }
-    
+  
       body {
       background-color: #fec7d7;
       display: flex;
-      justify-content: center;
+      justify-content: center
       }
 
-      .name {
-      color: #0e172c;
-      padding: 30px;
-      margin-top: 80px;
-      font-family: Sans-serif;
-      font-size: 20px;
-      justify-content: flex-end
-      }
-
-      /* .social-icons {
+      .social-icons a {
       display: flex;
       justify-content: space-around;
-      } */
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      border-radius: 40px;
+      text-decoration: none
       
-      .social-icons a {
+      }
+      
+      /* .social-icons a {
       color: #0e172c;
       font-family: Sans-serif;
       font-size: 20px;
-      }
+      } */
       
       .items {
       display: flex;
@@ -119,65 +137,36 @@
 
     <!-- Content -->
     
-    <!-- <div class="container mt-5"> -->
-      <!-- about.html -->
-      <!-- <div class="post">
-        <header class="post-header">
-          <h1 class="post-title">
-           Hazel Chui
-          </h1>
-          <p class="desc"></p>
-        </header> -->
-    <!-- <div style="padding: 20px;
-        margin-top: 50px;
-        justify-content: center;
-        color: #001e1d"
-        > -->
-
+    <!-- Header -->
     <div class="container">
       <div class="row">
-        <div class="col-sm">
-          <div class="name">   
+        <div class="col">
+          <div class="name"> 
             <h1>Hazel Chui</h1>
+            <h4>hoicc112@gmail.com</h4>
+            <div class="social-icons">
+              <div class="row header">
+                <a href="https://scholar.google.com/citations?hl=en&user=iVIu3SIAAAAJ&view_op=list_works&gmla=AMpAcmQ_jwpDfUgIuQf2Ypgst0x6Ow8iOQV4y4LxRNWofEpo65IQvKWN1xGzT-V-2rSRSZPT2TycuiMjrv31kftO" target="_blank"><img src='/Google_Scholar.png'></a>
+                <a href="https://github.com/hazelchc" target="_blank"><img src='/github.png'></a>
+                <a href="https://www.linkedin.com/in/hazel-chui-13758720b" target="_blank"><img src='/linkedin.png'></a>
+              </div>
+            </div> 
           </div>
         </div>
         <div class="col-sm">
-          <div class="banner">
-            <img src="/profile-pic.png" alt="Dog" class="portrait">
-          </div>
+          <img src="/profile-pic.png" alt="Hazel" class="portrait">
         </div>
+
+        <div class="row">
+          <div class="intro">
+            I'm Hazel! I graduated from the University of Chicago with a MA degree in Computational Social Science in June 2023. 
+          </div>
       </div>
-
-      <div class="row">
-
-        <div class="items">
-          <div class="link">
-            <img src="/sebastien-goldberg-YmvYdFU4LvE-unsplash.jpg" class="thumbnail">
-
-            <a target="_blank" href="https://www.hongkongfoodietours.com/19-must-eat-foods-in-hong-kong/">19 Must-eat Foods in Hong Kong
-            </a>
-          </div>
-
-          <div class="link">
-            <img src="/sawyer-bengtson-tnv84LOjes4-unsplash.jpg" class="thumbnail">
-
-            <a target="_blank"
-              href="https://www.theinfatuation.com/chicago/guides/first-timers-chicago-restaurant-guide">The First Timer’s Guide To Eating In Chicago</a>
-          </div>
-
-          <div class="link">
-            <img
-              src="/recha-oktaviani-t__61ap00Mc-unsplash.jpg" class="thumbnail">
-
-            <a target="_blank" href="https://www.w3schools.com/sql/">SQL Tutorial</a>
-          </div>
     </div>
-    <ul class="social-icons">
-      <li><a href="" target="_blank"><img src='img/gscholar.svg' /></a></li>
-      <li><a href="" target="_blank"><img src='img/github.png' /></a></li>
-      <li><a href="" target="_blank"><img src='img/linkedin.svg' /></a></li>
-  
-    </ul>
+
+    <!-- About -->
+
+
   </body>
   
 </html>
