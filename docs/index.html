@@ -14,31 +14,38 @@
     <style>
       .container {
       display: flex;
-      justify-content: center
+      justify-content: center;
+      max-width: 640px;
       }
 
-      .container2 {
+      /* .container2 {
       display: flex;
       justify-content: center
-      }
+      } */
 
       .name {
       color: #0e172c;
-      margin-top: 135px;
+      margin-top: 55px;
       font-family: Sans-serif;
       font-size: 20px;
+      text-align: center
       }
 
       .portrait {
-      margin-top: 80px;
+      margin-top: 10px;
+      margin-bottom: 10px;
       width: 220px;
       height: 220px;
       object-fit: cover;
       display: flex;
+      border-radius: 220px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
       }
 
-      .row.header {
-      justify-content: space-around
+      .row.header{
+      justify-content: center
       }
 
       /* .thumbnail {
@@ -51,15 +58,13 @@
       */
       
       .intro {
-        /* background-color: #fffffe; */
         display: flex;
-        margin-top: 135px;
         font-size: 18px;
-        align-items: center;
+        text-align: center
       } 
 
       .navbar {
-        background-color: #fffffe
+        background-color: transparent
       }
 
       .navbar-nav.ml-auto li a{
@@ -67,14 +72,13 @@
       }
   
       body {
-      background-color: #fec7d7;
+      background-color: #fffffe;
       display: flex;
       justify-content: center
       }
 
       .social-icons a {
       display: flex;
-      justify-content: space-around;
       width: 40px;
       height: 40px;
       object-fit: cover;
@@ -150,7 +154,7 @@
     <!-- Content -->
     
     <!-- Body Header -->
-    <div class="container">
+    <!-- <div class="container">
       <div class="row">
         <div class="col-sm">
           <div class="name"> 
@@ -169,12 +173,34 @@
           <img src="/profile-pic.png" alt="Hazel" class="portrait">
         </div>
       </div>
+    </div> -->
+
+    <div class="container">
+      <div class="name"> 
+        <h1>Hazel Chui</h1>
+        <h4>hoicc112@gmail.com</h4>
+        <div class="social-icons">
+          <div class="row header">
+            <a href="https://scholar.google.com/citations?hl=en&user=iVIu3SIAAAAJ&view_op=list_works&gmla=AMpAcmQ_jwpDfUgIuQf2Ypgst0x6Ow8iOQV4y4LxRNWofEpo65IQvKWN1xGzT-V-2rSRSZPT2TycuiMjrv31kftO" target="_blank"><img src='/Google_Scholar.png'></a>
+            <a href="https://github.com/hazelchc" target="_blank"><img src='/github.png'></a>
+            <a href="https://www.linkedin.com/in/hazel-chui-13758720b" target="_blank"><img src='/linkedin.png'></a>
+          </div>
+        </div>
+        <div class="row">
+          <img src="/profile-pic.png" alt="Hazel" class="portrait">
+        </div>
+      <!-- About -->
+      <div class="row intro">
+        <p>Hello, I'm Hazel! I recently graduated from the University of Chicago with a Master's degree in <a href="https://macss.uchicago.edu/" target="_blank">Computational Social Science</a>. </p>
+          <p>I thrive on tackling complex problems and using data to derive actionable insights. Whether it's identifying patterns in social media data or uncovering trends in large datasets, I am always eager to explore new avenues and push the boundaries of knowledge.</p> 
+        <p>Let's connect and explore how my passion for <code class="language-plaintext highlighter-rouge">data analysis</code> and <code class="language-plaintext highlighter-rouge">problem-solving</code> can align with your organization's goals and drive impactful results.</p>
+      </div>
+
     </div>
 
-      <!-- About -->
-      <!-- <div class="container2">
-        I'm Hazel! I graduated from the University of Chicago with a MA degree in Computational Social Science in June 2023. 
-      </div> -->
+
+  
+
   
 
   </body>
