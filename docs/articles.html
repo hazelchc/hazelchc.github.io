@@ -5,7 +5,7 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Hazel Chui's Homepage</title>
+    <title>Hazel Chui's Articles</title>
     <!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
     <meta charset="utf-8">
     <meta name="author" content="Hazel Chui">
@@ -16,10 +16,27 @@
       .container {
       display: flex;
       justify-content: center;
-      max-width: 640px;
+      max-width: 840px;
       }
 
-      .name {
+      .row.first-article {
+      padding: 20px;
+      background-color: rgba(255, 192, 203, 0.904);
+      text-align: left;
+      }
+
+      .row.second-article {
+      padding: 20px;
+      background-color: lightgrey;
+      text-align: left;
+      }
+
+      .row.header {
+      padding: 15px;
+      justify-content: left;
+      }
+
+      .articles {
       color: #0e172c;
       margin-top: 55px;
       font-family: Sans-serif;
@@ -27,34 +44,48 @@
       text-align: center
       }
 
-      .portrait {
+      .work {
       margin-top: 10px;
       margin-bottom: 10px;
-      width: 220px;
-      height: 220px;
+      width: 300px;
+      height: 250px;
       object-fit: cover;
       display: flex;
-      border-radius: 220px;
       display: block;
       margin-left: auto;
       margin-right: auto;
+
+      }
+      .future {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 300px;
+      height: 250px;
+      object-fit: cover;
+      display: flex;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+
       }
 
-      .row.header{
-      justify-content: center
-      }
-
-      .intro {
+      .col-sm.details{
         display: flex;
         font-size: 18px;
-        padding:5px;
-        text-align: center
+        text-align: left;
+        font-family: italic
+
       } 
+
+      .row.content{
+      align-items: flex-end
+      }
 
       .navbar {
         background-color: #fffffe;
         opacity: 0.9;
         text-emphasis-color: #0e172c;
+
       }
 
       .navbar-nav.ml-auto li a{
@@ -65,16 +96,6 @@
       background-color: #fffffe;
       display: flex;
       justify-content: center
-      }
-
-      .social-icons a {
-      display: flex;
-      width: 40px;
-      height: 40px;
-      object-fit: cover;
-      border-radius: 40px;
-      text-decoration: none
-      
       }
 
     </style>
@@ -101,13 +122,13 @@
         <!-- Navbar Content -->
         <div class="collapse navbar-collapse text-right" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="/">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/projects">Projects</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="/articles">Articles</a>
             </li>
             <li class="nav-item">
@@ -119,32 +140,44 @@
     </header>
 
     <!-- Content -->
-    
-    <!-- Body Header -->
     <div class="container">
-      <div class="name"> 
-        <h1>Hazel Chui</h1>
-        <h4>hoicc112@gmail.com</h4>
-        <div class="social-icons">
+      <div class="articles"> 
+        <h1>Articles</h1>
+        
+        <!-- First Article -->
+        <div class="row first-article">
           <div class="row header">
-            <a href="https://scholar.google.com/citations?hl=en&user=iVIu3SIAAAAJ&view_op=list_works&gmla=AMpAcmQ_jwpDfUgIuQf2Ypgst0x6Ow8iOQV4y4LxRNWofEpo65IQvKWN1xGzT-V-2rSRSZPT2TycuiMjrv31kftO" target="_blank"><img src='/Google_Scholar.png'></a>
-            <a href="https://github.com/hazelchc" target="_blank"><img src='/github.png'></a>
-            <a href="https://www.linkedin.com/in/hazel-chui-13758720b" target="_blank"><img src='/linkedin.png'></a>
+            <h6>1. <b>Chui, H.</b>, Li, H., & Ngo, H. Y. (2022). Linking protean career orientation with career optimism: Career adaptability and career decision self-efficacy as mediators. <i>Journal of Career Development, 49</i>(1), 161-173.</h6>
+          </div>
+          <div class="row content">
+            <div class="col-sm photo">
+              <img src="/work.png" alt="Hazel" class="work">
+            </div>
+            <div class="col-sm details">
+              <p>Protean career orientation has a positive relationship with career optimism, and such relationship is fully mediated by career adaptability and career decision self-efficacy......<br><br>
+                Details <a href="https://journals.sagepub.com/doi/full/10.1177/0894845320912526" target="_blank">here.</a></p>
+            </div>
           </div>
         </div>
-        <div class="row">
-          <img src="/profile-pic.png" alt="Hazel" class="portrait">
-        </div>
 
-      <!-- About -->
-      <div class="row intro">
-        <p>Hello, I'm Hazel! I recently graduated from the University of Chicago with a Master's degree in <a href="https://macss.uchicago.edu/" target="_blank">Computational Social Science</a>. </p>
-        <p>I thrive on tackling complex problems and using data to derive actionable insights. Whether it's identifying patterns in social media data or uncovering trends in large datasets, I am always eager to explore new avenues and push the boundaries of knowledge.</p> 
-        <p>Let's connect and explore how my passion for <code class="language-plaintext highlighter-rouge">data analysis</code> and <code class="language-plaintext highlighter-rouge">problem-solving</code> can align with your organization's goals and drive impactful results.</p>
+        <br>
+        <!-- Second Project -->
+        <div class="row second-article">
+          <div class="row header">
+            <h6>2. Li, H., Ngo, H. Y., & <b>Chui, H.</b> (2023). The impact of future work self on perceived employability and career distress. <i>Australian Journal of Career Development, 32</i>(1), 5-13.</h6>
+          </div>
+          <div class="row content">
+            <div class="col-sm photo">
+              <img src="/future.png" alt="Hazel" class="future">
+            </div>
+            <div class="col-sm details">
+              <p>Future work self has a positive relationship with perceived employability and a negative relationship with career distress......<br><br>
+                Details <a href="https://journals.sagepub.com/doi/abs/10.1177/10384162221140338" target="_blank">here</a>. </p>
+            </div>
+          </div>
+        </div>
+        
+        
       </div>
     </div>
-
-
   </body>
-  
-</html>
